@@ -1,0 +1,43 @@
+# Nome do seu workflow, que aparecerá no GitHub
+name: CI Laravel
+
+# Gatilho: Define QUANDO a automação deve rodar
+on:
+  # Roda sempre que houver um 'push' na branch dev
+  push:
+    branches: [ "dev" ]
+  # Roda sempre que um Pull Request for aberto ou atualizado para a branch dev
+  pull_request:
+    branches: [ "dev" ]
+
+# Trabalhos (jobs): Define O QUE a automação vai fazer
+jobs:
+  laravel-tests:
+    # Define o tipo de máquina virtual que será usada
+    runs-on: ubuntu-latest
+
+    # Passos (steps): A sequência de comandos a serem executados
+    steps:
+      # Passo 1: Clona o código do seu repositório para a máquina virtual
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Passo 2: Configura o ambiente PHP
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1' # Mude se seu projeto usar outra versão
+
+      # [cite_start]Passo 3: Instalação de dependências do Composer [cite: 397]
+      - name: Install Composer Dependencies
+        run: composer install --no-progress --prefer-dist --optimize-autoloader
+
+      # Passo 4: Prepara o arquivo de ambiente do Laravel
+      - name: Prepare Laravel Environment
+        run: |
+          cp .env.example .env
+          php artisan key:generate
+
+      # [cite_start]Passo 5: Execução de testes automatizados [cite: 399]
+      - name: Run Pest/PHPUnit Tests
+        run: php artisan test
