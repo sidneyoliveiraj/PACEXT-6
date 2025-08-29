@@ -1,143 +1,61 @@
-# PACEXT-6
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-1 .Requisitos Funcionais<br><br>
-Cadastro <br><br>
-RF01: O sistema deve permitir que clientes criem uma conta com e-mail e senha.<br>
-RF02: O sistema deve permitir login e logout de clientes cadastrados.<br>
-RF03: O sistema deve permitir a recuperação de senha via e-mail.<br><br>
-Produtos e Serviços<br><br>
-RF04: O sistema deve permitir o cadastro, edição e remoção de produtos de skincare.<br>
-RF05: O sistema deve permitir o cadastro, edição e remoção de serviços estéticos.<br>
-RF06: O sistema deve exibir um catálogo de produtos com imagens, descrição e preços.<br>
-RF07: O sistema deve permitir a filtragem de produtos por categorias, preços e avaliações.<br>
-RF08: O sistema deve exibir um catálogo de serviços estéticos oferecidos, com descrições detalhadas.<br><br>
-Venda e Pedidos<br><br>
-RF09: O sistema deve permitir que clientes adicionem produtos ao carrinho e finalizem compras.<br>
-RF10: O sistema deve permitir diferentes formas de pagamento, como cartão de crédito, boleto e Pix.<br>
-RF11: O sistema deve fornecer um histórico de compras para cada cliente.<br>
-RF12: O sistema deve permitir que clientes acompanhem o status de seus pedidos.<br>
-RF13: O sistema deve enviar notificações por e-mail sobre status do pedido (confirmação, envio, entrega).<br><br>
-Estoque e Relatórios<br><br><br>
-RF14: O sistema deve controlar o estoque dos produtos, atualizando automaticamente após cada compra.<br>
-RF15: O sistema deve gerar relatórios de vendas, incluindo produtos mais vendidos, faturamento total e pedidos cancelados.<br>
-RF16: O sistema deve exibir métricas de engajamento, como origem dos visitantes e interações com produtos.<br><br>
-Interação e Engajamento<br><br>
-RF17: O sistema deve permitir avaliação e comentários em produtos por clientes cadastrados.<br>
-RF18: O sistema deve exibir automaticamente as postagens mais recentes do Instagram da loja.<br>
-RF19: O sistema deve possuir uma vitrine interativa com produtos em destaque e depoimentos de clientes.<br>
-RF20: O sistema deve fornecer um chat integrado ao WhatsApp para dúvidas rápidas sobre produtos.<br>
-RF21: O sistema deve possuir links rápidos para redes sociais da loja.<br><br>
-Gestão e Administração<br><br>
-RF22: O sistema deve fornecer uma dashboard para a esteticista com um painel de controle de estoque e pedidos, incluindo métricas como produtos mais vendidos, estoque baixo, histórico de vendas, clientes mais ativos e análise de engajamento.<br>
+## About Laravel
 
-<br><br>
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-Requisitos Não Funcionais<br><br>
-RNF01: O sistema deve ser responsivo, garantindo uma experiência otimizada em dispositivos móveis, tablets e desktops.<br>
-RNF02: O tempo de resposta das requisições deve ser inferior a 3 segundos, garantindo um desempenho ágil.<br>
-RNF03: O sistema deve garantir a segurança dos dados dos usuários, utilizando criptografia para armazenamento de senhas e conexões seguras (HTTPS).<br>
-RNF04: O sistema deve permitir a exportação de relatórios de vendas e engajamento em formato CSV e PDF.<br>
-RNF05: O sistema deve ser compatível com os navegadores Google Chrome, Mozilla Firefox e Microsoft Edge, garantindo funcionalidade consistente.<br>
-RNF06: O sistema deve seguir as normas da LGPD (Lei Geral de Proteção de Dados), garantindo a privacidade e o tratamento adequado das informações dos usuários.<br>
-RNF07: O sistema deve possuir backup periódico dos dados para evitar perdas em caso de falhas.<br>
-RNF08: O sistema deve ter uma interface intuitiva e acessível, seguindo diretrizes de usabilidade e acessibilidade.<br>
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
+## Learning Laravel
 
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-<br><br>
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
+## Laravel Sponsors
 
-Escolha da Arquitetura<br><br>
-Para acomodar todos os requisitos funcionais (RF) e não funcionais (RNF) levantados no projeto, optamos por uma arquitetura em camadas (layered architecture). Essa escolha se mostra consistente porque separa claramente as responsabilidades de cada parte do sistema, permitindo evoluções futuras sem comprometer a estrutura como um todo.<br><br>
-Camada de Apresentação (Front-end)<br><br>
- Esta camada cuida da interação com o usuário, tanto para clientes quanto para a esteticista, garantindo uma interface responsiva (RNF01). Ferramentas como React, possibilitam uma experiência rápida e intuitiva (RNF08). Além disso, manter o front-end bem organizado contribui para que as requisições sejam ágeis (RNF02).<br><br>
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
+### Premium Partners
 
-Camada de Negócio (Back-end)<br><br>
- Aqui ficam as regras de negócio, como autenticação de usuários (RF01-RF03), processamento de pagamentos (RF10) e geração de relatórios (RF15). É também o ponto-chave para aplicar políticas de segurança (RNF03) e assegurar a conformidade com a LGPD (RNF06). Com isso, garantimos que as operações de estoque (RF14) e a integração com redes sociais ou gateways de pagamento sejam centralizadas e confiáveis.<br><br>
+- **[Vehikl](https://vehikl.com)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Redberry](https://redberry.international/laravel-development)**
+- **[Active Logic](https://activelogic.com)**
 
+## Contributing
 
-Camada de Dados (Banco de Dados)<br><br>
- Responsável por armazenar de forma segura informações como cadastro de usuários, histórico de compras e produtos em estoque (RF14, RNF03). Por meio de rotinas de backup (RNF07) e boas práticas de banco de dados, conseguimos minimizar perdas de informação e atender também às necessidades de exportação de relatórios em diferentes formatos (RNF04).<br><br>
-Por que essa arquitetura atende aos requisitos?<br><br>
-Separação de Responsabilidades: Cada camada resolve uma parte do problema, facilitando manutenção e evolução.
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
+## Code of Conduct
 
-Escalabilidade e Desempenho: Se precisarmos lidar com mais usuários ou aprimorar a performance, podemos otimizar cada camada de forma independente (por exemplo, adicionar cache no back-end para diminuir o tempo de resposta).
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
+## Security Vulnerabilities
 
-Centralização de Segurança: Criptografia e controle de acesso ficam concentrados no back-end, tornando mais simples garantir requisitos como RNF03 (segurança) e RNF06 (LGPD).
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
+## License
 
-Facilidade de Trabalho em Equipe: Dividir o projeto em front-end, back-end e banco de dados permite que diferentes membros atuem em paralelo, mantendo boa comunicação via APIs.
-
-<br><br>
-
-Responsabilidade de cada integrante no projeto :
-
-<br>
-
-Luis Felipe Fachini<br>
-Função: Gerente de Projeto<br>
-Responsabilidades:<br>
-Coordenar as atividades da equipe<br>
-Garantir o cumprimento dos prazos<br>
-Fazer a ponte entre a equipe e a esteticista (cliente)<br>
-Documentar requisitos e mudanças do projeto<br>
-
-<br><br>
-
-
-José Lucas A. Fonseca<br>
-Função: Desenvolvedor Front-end<br>
-Responsabilidades:<br>
-Projetar a interface do usuário<br>
-Implementar elementos visuais responsivos<br>
-Garantir boa experiência em dispositivos móveis<br>
-Integrar com APIs de redes sociais<br>
-
-
-<br><br>
-
-Sidney Cardoso de Oliveira Junior<br>
-Função: Desenvolvedor Back-end<br>
-Responsabilidades:<br>
-Desenvolver a estrutura do servidor<br>
-Implementar sistema de autenticação<br>
-Desenvolver APIs para comunicação front-end/back-end<br>
-Configurar banco de dados<br>
-
-<br><br>
-
-
-Eder Duarte Zerek<br>
-Função: UX/UI Designer<br>
-Responsabilidades:<br>
-Criar wireframes e protótipos<br>
-Projetar identidade visual alinhada com a marca da esteticista<br>
-Garantir usabilidade para diferentes públicos<br>
-Realizar testes de usabilidade<br>
-
-<br><br>
-
-Max Buzzarello Maul<br>
-Função: UX/UI Designer<br>
-Responsabilidades:<br>
-Criar wireframes e protótipos<br>
-Projetar identidade visual alinhada com a marca da esteticista<br>
-Garantir usabilidade para diferentes públicos<br>
-Realizar testes de usabilidade<br>
-
-<br><br>
-
-Leonardo Henrique Nascimento<br>
-Função: Tester / Quality Assurance<br>
-Responsabilidades:<br>
-Desenvolver e executar planos de teste<br>
-Identificar e documentar bugs<br>
-Verificar conformidade com requisitos<br>
-Testar experiência do usuário e performance<br>
-
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
