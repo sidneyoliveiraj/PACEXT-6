@@ -25,6 +25,7 @@ return new class extends Migration
     $table->enum('role', ['customer', 'admin'])->default('customer');
     $table->rememberToken();
     $table->timestamps();
+    $table->softDeletes();
 });
     }
     
@@ -33,3 +34,5 @@ return new class extends Migration
         Schema::dropIfExists('users');
     }
 };
+
+//Revisado - Lucas
