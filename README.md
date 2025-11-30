@@ -1,4 +1,4 @@
-# PACEXT-6 – Sistema Web para Gestão de Produtos e Serviços para Esteticista
+# PACEXT-6 
 
 ## PAC – Projeto de Aprendizagem Colaborativa Extensionista  
 Curso de Engenharia de Software – Católica de Santa Catarina
