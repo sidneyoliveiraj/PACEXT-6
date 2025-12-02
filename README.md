@@ -146,4 +146,4 @@ Reúne todas as ferramentas de gestão do sistema, permitindo ao administrador v
 
 ## Vídeo de Demonstração do APP
 
-Link do vídeo:
+https://drive.google.com/file/d/1U4xserIAJc52bY6rPZpITpsgkeJDk_0D/view?usp=sharing
