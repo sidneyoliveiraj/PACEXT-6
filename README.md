@@ -102,38 +102,46 @@ http://localhost:8000
 
 Tela Inicial
 
-( inserir imagem aqui )
-Descrição da tela.
+![Tela Inicial](public/imgs/Screenshot_3.png)
+![Tela Inicial](public/imgs/Screenshot_2.png)
+
+Página principal da clínica, com banner de destaque, botões para ver produtos e serviços, vitrine de produtos em destaque e depoimentos de clientes, finalizando com chamada para contato/WhatsApp.
 
 Tela de Login
 
-( inserir imagem aqui )
-Descrição da tela.
+![Tela Inicial](public/imgs/Screenshot_10.png)
+Tela para o cliente acessar sua conta, informando e-mail e senha, com opção de lembrar login e link para recuperar a senha ou criar uma nova conta.
 
 Tela de Cadastro
 
-( inserir imagem aqui )
-Descrição da tela.
+![Tela Inicial](public/imgs/Screenshot_9.png)
+Formulário completo para criar conta de cliente, com campos de dados pessoais, endereço, contato, senha e aceite dos termos de uso e política de privacidade.
 
 Catálogo de Produtos
 
-( inserir imagem aqui )
-Descrição da tela.
+![Tela Inicial](public/imgs/Screenshot_4.png)
+![Tela Inicial](public/imgs/Screenshot_6.png)
+Listagem de produtos de skincare com filtros por categoria e ordenação, barra de busca e cards com nome, preço, desconto e botão para adicionar o item ao carrinho
+e tela que apresenta os serviços estéticos oferecidos, com filtros por tipo de tratamento e lista de serviços mostrando nome, descrição resumida, preço e botão para ver detalhes ou agendar.
 
 Detalhes do Produto
 
-( inserir imagem aqui )
-Descrição da tela.
+![Tela Inicial](public/imgs/Screenshot_5.png)
+![Tela Inicial](public/imgs/Screenshot_7.png)
+Página de detalhes de um produto específico, exibindo imagem, categoria, descrição, preço promocional e botão para adicionar o item ao carrinho, além de produtos relacionados
+e página com a descrição completa do serviço, preço, duração e benefícios, além de chamada para agendar consulta e atalhos para contato via WhatsApp ou ligação.
 
 Carrinho de Compras
 
-( inserir imagem aqui )
-Descrição da tela.
+![Tela Inicial](public/imgs/Screenshot_8.png)
+Resumo dos produtos selecionados com quantidade, valores individuais, subtotal, frete, desconto, campo para cupom e painel de finalização de pedido com formas de pagamento.
 
 Área Administrativa
 
-( inserir imagem aqui )
-Descrição da tela.
+![Tela Inicial](public/imgs/Screenshot_11.png)
+![Tela Inicial](public/imgs/Screenshot_12.png)
+![Tela Inicial](public/imgs/Screenshot_13.png)
+Reúne todas as ferramentas de gestão do sistema, permitindo ao administrador visualizar métricas gerais da loja, acompanhar vendas e pedidos, gerenciar produtos e serviços e acessar informações de clientes e avaliações. O painel oferece uma visão clara do desempenho do negócio, com gráficos atualizados, status de estoque, filtros avançados e ações rápidas para edição ou exclusão de itens. Tudo foi organizado para facilitar a operação diária da clínica e manter o controle completo das funcionalidades internas do sistema.
 
 
 ## Vídeo de Demonstração do APP
